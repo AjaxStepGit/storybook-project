@@ -3,12 +3,13 @@ interface StyledButtonProps {
 
   backGroundColor?: string;
 
-  primary?: boolean;
+  primary: string;
 
   label: string;
 }
 
 import React from "react";
+import "./StyledButton.css";
 
 const StyledButton = ({
   primary,
@@ -18,13 +19,7 @@ const StyledButton = ({
 }: StyledButtonProps) => {
   return (
     <>
-      <button
-        className={`px-4 py-1 ${
-          backGroundColor ? backGroundColor : "bg-emerald-600"
-        } text-gray-50 transition duration-700 ease-in-out`}
-      >
-        {label}
-      </button>
+      <button className={primary}>{label}</button>
     </>
   );
 };

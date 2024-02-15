@@ -18,14 +18,21 @@ type Story = StoryObj<typeof meta>;
 
 export const PrimaryStyled: Story = {
   args: {
-    label: "Click me",
-    backGroundColor: "bg-orange-700",
+    label: "Primary me",
+    primary: "primary",
   },
 };
 
 export const DangerStyled: Story = {
   args: {
     label: "Danger me",
-    backGroundColor: "bg-red-900",
+    primary: "danger",
+  },
+};
+
+export const SecondaryStyled: Story = {
+  args: {
+    label: "Secondary me",
+    primary: "secondary",
   },
 };

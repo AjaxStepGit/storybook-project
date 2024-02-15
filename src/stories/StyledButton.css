@@ -1,0 +1,50 @@
+/* Class with more padding left and right, less padding top and bottom, and background color #FF8911 */
+.primary {
+    padding: 10px 15px; /* Adjust the values as needed */
+    color: #fff;
+    background-color: #FF8911;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 150px;
+  }
+  
+
+  .danger {
+    padding: 10px 15px; /* Adjust the values as needed */
+    color: #fff;
+    background-color: #D04848;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 150px;
+  }
+
+
+  .secondary {
+    padding: 10px 15px; /* Adjust the values as needed */
+    color: #fff;
+    background-color: #F3B95F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 150px;
+  }
+  
+  /* Hover effect */
+  .primary:hover,
+  .danger:hover,
+  .secondary:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Click effect */
+  .primary:active,
+  .danger:active,
+  .secondary:active {
+    transform: scale(0.95);
+  }
+  
